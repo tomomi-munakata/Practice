@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>自己紹介サイト</title>
+  <style type="text/css">
+    html{
+      scroll-behavior: smooth;
+    }
+    .header {
+        z-index: 10;
+        height: 60px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        width: 100%;
+        text-align: right;
+        z-index: 2;
+        scroll-behavior: smooth;
+    }
+    /* nav {
+      position: fixed;
+      padding: 40px;
+      right: 30px;
+      scroll-behavior: smooth;
+    } */
+    .wrapper .container {
+      max-width: 1000px;
+      margin: 0px auto;
+      padding: 80px 0px;
+    }
+    .wrapper .content{
+      padding: 50px;
+      text-align: center;
+    }
+     .wrapper .content .heading {
+         margin: 150px 0px 40px 0px;
+         font-size: 60px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-weight: normal;
+         text-align: center;
+     }
+     ul {
+         overflow: hidden;
+         list-style: none;
+         margin: 0 auto;
+         z-index: 20;
+    }
+     ul  {
+         display: inline-block;
+         padding: 26px 10px 20px 10px;
+    }
+     li {
+        list-style-type: none;
+        font-size: 40px;
+        padding: 200px 50px;
+        margin: 50px;}
+  </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="header">
+            <nav><a href="#ABOUT">ABOUT</a> <a href="#WORKS">WORKS</a> <a href="#SKILLS">SKILLS</a> <a href="#CONTACT">CONTACT</a></nav>
+        </div>
+        <div class="container">
+        <div class="content">
+          <h2 class="heading">MUNAKATA TOMOMI
+          <P>PORTFOLIO</P></h2>
+        </div>
+        </div>
+        <ul>
+            <li id="ABOUT">ABOUT</li>
+            <li id="WORKS">WORKS</li>
+            <li id="SKILLS">SKILLS</li>
+            <li id="CONTACT">CONTACT</li>
+         </ul>
+    </section>
+</body>
+</html>
