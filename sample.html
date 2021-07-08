@@ -148,26 +148,39 @@ ul, li {
   margin-bottom: 40px;
   letter-spacing: .08em;
 }
-.works-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -40px;
+.works{
+    width:100%;
+    background-color:#fafafa;
 }
-.works-item {
-  width: 31.74603%;
-  margin-right: 1.58730%;
-  margin-bottom: 40px;
-  color: #333;
+.works .inner{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
 }
-.works-item:hover {
-  opacity: .9;
+ .works .inner .works-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
-.works-item:nth-of-type(3n) {
-  margin-right: 0;
+.works .works-item {
+    width:100%;
 }
-.works-img img {
-  border: 1px solid #e6e6e6;
-  width: 400;
+.works .works-item {
+        width:50%;
+}
+.works .works-img{
+    display:block;
+    max-width:100%;
+    margin:0px auto;
+}
+.works .works-text{
+    padding:50px;
+}
+.works .works-text{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
 }
 .works-name {
     margin:0px 0px 40px 0px;
@@ -178,7 +191,7 @@ ul, li {
 .works-info {
   font-size: 10px;
 }
-.skill-list {
+/* .skill-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -201,6 +214,48 @@ ul, li {
 }
 .skill-name {
   margin-bottom: 3px;
+} */
+/* innner */
+.skill{
+    width:100%;
+}
+.skill .inner{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+.skill .skill-content{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+.skill .skill-content .skill-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.skill .skill-content .skill-list-item {
+    margin:50px 0px;
+    padding:0px 50px;
+    text-align:center;
+}
+.skill .skill-content .skill-list-item {
+        margin:0px;
+        width:calc(100% / 3);
+}
+.wkill .skill-content .skill-list-item .skill-img{
+    display:block;
+    width:100%;
+    max-width:300px;
+    margin:0px auto 20px auto;
+    border-radius:100%;
+}
+.skill .skill-content .skill-list-item .skill-name{
+    line-height:1.8rem;
+    font-size: 40px;
+    color:#666666;
 }
 .profile {
   display: flex;
@@ -285,78 +340,59 @@ ul, li {
       <!-- /main-visual -->
 
       <!-- works -->
-      <section class="works section" id="works">
+      <section class="works" id="works">
         <div class="inner">
-          <h2 class="title">WORKS</h2>
-          <div class="works-list">
-            <a class="works-item">
-              <p class="works-img"><img src="img/works-Sample1.jpg" alt="works-Sample" /></p>
-              <p class="works-name">PORTFOLIO（このサイト）</p>
-              <p class="works-info">Design / Coding(Responsive)</p>
-            </a>
-          </div>
+      <h2 class="title">WORKS</h2>
+            <div class="works-content">
+                <div class="works-item"> 
+            <p class="works-img">
+                  <img src="img/works-Sample1.jpg" alt="works-Sample">
+            </p>
+                </div>    
+                <div class="works-item">
+                    <div class="works-text">
+                        <p class="works-name">PORTFORIO(このサイト)</p>
+                    　　<p class="works-info">Design / Coding(Responsive)</p>
         </div>
-      </section>
+                </div>
+            </div>
+        </div>
+    </section>
       <!-- /works -->
 
       <!-- skill -->
-      <section class="skill section" id="skill">
+      <section class="skill" id="skill">
         <div class="inner">
           <h2 class="title">SKILL</h2>
-          <div class="skill-list">
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">HTML5/CSS3</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">WordPress</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Photoshop</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Illustrator</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
-            </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
-              <div class="skill-body">
-                <h3 class="skill-name">XD</h3>
-                <p class="skill-text">
-                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
-              </div>
+            <div class="skill-content">
+                <div class="skill-list">
+                    <div class="skill-list-item">
+                        <p class="skill-img">
+                        <img src="img/HTML.jpg" alt="HTML"></p>
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill-list-item">
+                        <p class="skill-img">
+                        <img src="img/CSS.jpg" alt="CSS"></p>
+                        <div class="skill-name">CSS</div>
+                   </div>
+                    <div class="skill-list-item">
+                        <p class="skill-img">
+                        <img src="img/JS.jpg" alt="JS"></p>
+                        <div class="skill-name">JS</div>
+                        </div>
+                    <div class="skill-list-item">
+                        <p class="skill-img">
+                        <img src="img/JS.jpg" alt="JS"></p>
+                        <div class="skill-name">JS</div>
+                    </div>
+                　</div>
+                <br><br>
+                <h3 class="skill-text">学習中です</h3>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- /skill -->
-
+    </section>
+    
       <!-- about -->
       <section class="about section" id="about">
         <div class="inner">
