@@ -4,309 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <title>自己紹介サイト</title>
-  <style type="text/css">
-    html {
-        box-sizing: border-box;
-        word-break: normal;
-        tab-size: 4;
-    }
-    body {
-        font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
-        font-size: 14px;
-        line-height: 1.8;
-        letter-spacing: .8px;
-        color: #333;
-    }
-    img {
-         max-width: 100%;
-         height: auto;
-         vertical-align: bottom;
-         border-style: none;
-    }
-ul, li {
-  list-style: none;
-}
-
-.wrapper {
-  padding-top: 73px;
-}
-
-.section {
-  padding: 90px 0;
-}
-
-.section:nth-of-type(odd) {
-  background-color: #f7f7f7;
-}
-
-.inner {
-  max-width: 1340px;
-  margin: 0 auto;
-  padding: 0 40px;
-}  
-
-.title {
-  font-size: 34px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
-  text-align: center;
-  letter-spacing: .05em;
-  color: #333;
-}
-
-.lead {
-  margin-bottom: 30px;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
-}
-
-.header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-}
-
-.header-logo {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-right: 20px;
-  letter-spacing: .05em;
-}
-
-.header-logo a {
-  color: #333;
-}
-
-.header-nav-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-nav-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.header-nav-item a {
-  position: relative;
-  font-size: 13px;
-  font-weight: bold;
-  display: inline-block;
-  padding: 5px 0;
-  transition: .3s;
-  letter-spacing: .05em;
-  color: #333;
-}
-.header-nav-item a:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 3px;
-  content: "";
-  transition: .3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #333;
-}
-
-.header-nav-item a:hover:after {
-  width: 100%;
-}
-.main-visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
-  text-align: center;
-}
-
-.main-visual-inner {
-  padding: 0 40px;
-}
-
-.main-visual-title {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 5px;
-  letter-spacing: .1em;
-}
-.main-visual-subtitle {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 40px;
-  letter-spacing: .08em;
-}
-.works{
-    width:100%;
-    background-color:#fafafa;
-}
-.works .inner{
-    max-width:1000px;
-    margin:0px auto;
-    padding:80px 0px;
-}
- .works .inner .works-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-.works .works-item {
-    width:100%;
-}
-.works .works-item {
-        width:50%;
-}
-.works .works-img{
-    display:block;
-    max-width:100%;
-    margin:0px auto;
-}
-.works .works-text{
-    padding:50px;
-}
-.works .works-text{
-    margin:0px 0px 40px 0px;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-}
-.works-name {
-    margin:0px 0px 40px 0px;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-}
-.works-info {
-  font-size: 10px;
-}
-/* .skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: -50px;
-}
-.skill-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 48%;
-  margin-bottom: 50px;
-}
-.skill-img {
-  width: 60px;
-  height: auto;
-  margin-right: 20px;
-}
-.skill-body {
-  flex: 1;
-}
-.skill-name {
-  margin-bottom: 3px;
-} */
-/* innner */
-.skill{
-    width:100%;
-}
-.skill .inner{
-    max-width:1000px;
-    margin:0px auto;
-    padding:80px 0px;
-}
-/* content */
-.skill .skill-content{
-    margin:0px 0px 40px 0px;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-}
-.skill .skill-content .skill-list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-.skill .skill-content .skill-list-item {
-    margin:50px 0px;
-    padding:0px 50px;
-    text-align:center;
-}
-.skill .skill-content .skill-list-item {
-        margin:0px;
-        width:calc(100% / 3);
-}
-.wkill .skill-content .skill-list-item .skill-img{
-    display:block;
-    width:100%;
-    max-width:300px;
-    margin:0px auto 20px auto;
-    border-radius:100%;
-}
-.skill .skill-content .skill-list-item .skill-name{
-    line-height:1.8rem;
-    font-size: 40px;
-    color:#666666;
-}
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.profile-img {
-  width: 20%;
-  margin-right: 30px;
-  border-radius: 50%;
-}
-.profile-img img {
-  border-radius: 50%;
-}
-.profile-body {
-  flex: 1;
-}
-.profile-body p:not(:last-child) {
-  margin-bottom: 30px;
-}
-.contact {
-  text-align: center;
-}
-.contact-item:not(:last-child) {
-  margin-right: 10px;
-}
-.contact-text {
-  margin-top: 10px;
-}
-.page-top {
-  font-weight: bold;
-  padding: 10px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #4c4c4c;
-}
-.page-top .material-icons-outlined {
-  vertical-align: bottom;
-  color: #fff;
-}
-.footer {
-  padding: 30px;
-  background-color: #333;
-}
-.copyright {
-  font-size: 10px;
-  text-align: center;
-  color: #797979;
-} 
-  </style>
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
@@ -332,6 +30,7 @@ ul, li {
 
       <!-- main-visual -->
       <div class="main-visual">
+        <p class="works-img">
         <div class="main-visual-inner">
           <p class="main-visual-title">TOMOMI MUNAKATA</p>
           <p class="main-visual-subtitle">PORTFOLIO</p>
@@ -388,30 +87,31 @@ ul, li {
                     </div>
                 　</div>
                 <br><br>
-                <h3 class="skill-text">学習中です</h3>
+                <h3 class="skill-text">勉強中です</h3>
             </div>
           </div>
     </section>
-    
-      <!-- about -->
-      <section class="about section" id="about">
+      <section class="about" id="about">
         <div class="inner">
-          <h2 class="title">ABOUT</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="img/profile.jpg" alt="">
+    <!-- about -->
+      <h2 class="title">ABOUT</h2>
+            <div class="about-content">
+                <div class="about-item1"> 
+            <p class="about-img">
+                  <img src="img/m.jpg" alt="about-Sample">
             </p>
-            <div class="profile-body">
-              <p>
-                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-              </p>
-              <p>
-                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
-              </p>
+                </div>    
+                <div class="about-item2">
+                    <div class="about-text">
+                      <p class="about-name">宗像 友美</p>
+                      <p class="about-namesub">TOMOMI MUNAKATA</p>
+                    　　<p class="about-info">1999/2/19生まれ。神奈川県出身。</p>
+                        <p class="about-sub">エンジニアとして活躍できるよう勉強中です。</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
       <!-- /about -->
 
       <!-- contact -->
@@ -426,10 +126,10 @@ ul, li {
         </div>
       </section>
       <!-- /contact -->
-      <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
-      </div>
-    </main>
+
+    <!-- page top -->
+    <button id="page-top" class="page-top"></button>
+    <!-- /page top -->
 
     <!-- footer -->
     <footer class="footer">
@@ -438,7 +138,14 @@ ul, li {
     <!-- /footer -->
 
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
+  <script>
+    'use strict'; 
+    const pagetopBtn = document.querySelector('#page-top')
+    pagetopBtn.addEventListener('click', ()=>{
+    window.scrollTo({
+    top: 0,
+  })
+  })
+  </script> 
 </body>
 </html>
